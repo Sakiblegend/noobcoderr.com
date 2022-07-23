@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About "Bugs" & "mutation opearator"</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<img src="beach.jpg" id="school">
+<h3>Noobhacker</h3>
+  
+  <nav id="college">
+    <ul>
+      <li> Home</li>
+      <li> Our Services</li>
+      <li>Setting</li>
+       <li>About us</li></ul>
+
+    </ul>
+  </nav>
+  
+  <script src="main.js"></script>
+  <h4 id="yt"> Defination on bugs &mutation operators</h4>
+  <h3 id="bug"> Bug Defination</h3>
+  
+  <p class="egg">Bug definitions. Practitioners and researchers can have dif-
+  ferent definitions of bugs. Herzig et al. [10] claimed that
+  at least 30% of reported bugs are not bugs, but features.
+  Even researchers may have different definitions of bugs. For
+  example, in our previous work [41], we reported our detected
+  documentation errors as bugs, and programmers accepted and
+  fixed them as bugs. However, by the definition of Herzig et al.,
+  our detected errors are documentation requests, but not bugs.
+  The different definitions lead to quite different results. In our
+  study, we follow the pragmatic definition of practitioners, i.e.,
+  those issues that are reported and fixed as bugs. The benefit is
+  that the results reflect the reality of practice, and practitioners
+  do not need to read all the definitions to understand our results.
+  More factors of automatic program repair. We have focused
+  on the major factors of current automatic program repair, and
+  due to space limit, we certainly miss some factors that are also
+  relevant. For example, the domain knowledge of compilers,
+  tool chains, programming models, multi-programming and
+  concurrent, and the low-level knowledge of operating systems
+  and hardware are essential to fix some bugs. Murphy-Hill et
+  al. [23] present various factors, when programmers manually
+  fix bugs. In addition, Luo et al. [20] show that bugs can not
+  be easily reproducible or verifiable, which introduces extra
+  barriers to automatic program repair. In future work, we plan
+  to conduct studies to investigate the importance of these factors.
+  Manual fixes vs. automatic fixes. Neither manual fixes nor
+  automatic fixes are perfect. Although Yin et al. [39] show that
+  manual fixes can be incorrect, our results are still reliable, since
+  most fixes are correct. At the same time, a program fix may
+  pass test cases, but does not fix the real problem. Bird et al. [3]
+  show that even manual fixes should be carefully examined, so
+  it is likely that the correctness of program fixes also needs
+  to be verified. Although we agree with Monperrus [22] that
+  understandability of patches is inessential in certain situations,
+  in most cases, generated patches should be readable to humans
+  or other programs for verification. In addition, although it is
+  a practical way to mimic humans and it is a good way to
+  understand the challenges by analyzing manual fixes, we agree</p>
+  <h3 id="mutation"> Mutation opearator</h3>
+  <p class="egg">As the underlying tool, ChangeDistiller [7], is built on
+  the Eclipse’s Java model18, the code elements of extracted
+  repair actions follow the APIs of Eclipse19. We find that the
+  underlying tool has special strategies to extract repair actions
+  on Block and MethodDeclaration. For example, it counts
+  adding or deleting a method as an addition or a deletion on
+  MethodDeclaration, but it counts only modifying a method
+  name as a modification on MethodDeclaration. It does
+  not count modifications inside a method (e.g., the modifier,
+  the parameters, and the statements in the method body) as
+  a modification on MethodDeclaration, but counts
+  0
+  0.1
+  0.2
+  0.3
+  0.4
+  0.5
+  number of API repair actions
+  percent of corresponding
+  modified source files
+  Aries
+  Cassandra
+  Derby
+  Lucene/Solr
+  Mahout
+  Total
+  Fig. 5. The distribution of API repair actions.
+  finer levels. Here, as a method may have complicated structures,
+  current program repair may not add a method effectively,
+  although it is counted as a repair action.
+  As discussed in Section III-B, non-data dependent repair
+  actions follow quite different patterns from data dependent
+  repair actions, and current automatic program repair is effective
+  to apply only non-data dependent repair actions. To eliminate
+  the interference between the two types of repair actions
+  and to provide valuable findings for the state-of-the-art, this
+  study focuses only on non-data dependent repair actions.
+  By definition, Javadoc, Modifier, BreakStatement, and
+  ContinueStatement have only non-data dependent repair
+  actions. All the other code elements have both data dependent
+  and non-data dependent repair actions. The nature of code
+  elements affects their ranks. For example, Pan et al. [25]
+  show that a large portion of bug-fix patterns are related to if
+  statements. In our study, we find that most repair actions on if
+  statements are data dependent. As a result, its rank is low. The
+  results show that automatic program repair should leverage
+  data-flow analysis to effectively apply repair actions on this
+  code element.</p>
+</body>
+</html>
+
