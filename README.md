@@ -1,2 +1,0 @@
-# noobcoderr.com
-My Projects.
